@@ -40,7 +40,7 @@
       gtag('config', 'UA-118965717-5');
     </script>
   </head>
-  <body class="app header-fixed sidebar-fixed aside-menu-fixed sidebar-lg-show">
+  <body class="app header-fixed">
       <header class="app-header navbar">
         <!-- Search bar, need to adjust margins-->
         <div class="input-prepend input-group">
@@ -49,7 +49,7 @@
                 <i class="fa fa-search"></i>
               </span>
             </div>
-            <input class="form-control" id="prependedInput" size="16" type="text" placeholder="What are you looking for?">
+            <input class="form-control" id="prependedInput" size="32" type="text" placeholder="What are you looking for?">
             <span class="input-group-append">
               <button class="btn btn-info" type="button">Search</button>
             </span>
@@ -69,11 +69,6 @@
             <div class="card-columns cols-2">
               <div class="card">
                 <div class="card-header">Line Chart
-                  <div class="card-header-actions">
-                    <a class="card-header-action" href="http://www.chartjs.org" target="_blank">
-                      <small class="text-muted">docs</small>
-                    </a>
-                  </div>
                 </div>
                 <div class="card-body">
                   <div class="chart-wrapper">
@@ -83,6 +78,7 @@
               </div>
             </div>
           </div>
+          <style>.embed-container {position: relative; padding-bottom: 80%; height: 0; max-width: 80%;} .embed-container iframe, .embed-container object, .embed-container iframe{position: absolute; top: 0; left: 0; width: 70%; height: 50%;} small{position: absolute; z-index: 40; bottom: 0; margin-bottom: -15px;}</style><div class="embed-container"><iframe width="300" height="200" frameborder="4" scrolling="no" marginheight="0" marginwidth="0" title="Airports Heatmap" src="//www.arcgis.com/apps/Embed/index.html?webmap=de38d57a28ed4f028e0c4f184529683a&extent=-128.7081,16.5474,-42.5753,55.8726&zoom=true&previewImage=false&scale=true&disable_scroll=true&theme=light"></iframe></div>
         </div>
       </main>
     <!-- CoreUI and necessary plugins-->
