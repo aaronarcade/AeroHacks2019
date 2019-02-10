@@ -1,6 +1,6 @@
 # Delta Fleet Overview for AeroHacks2019
 
-Our use FOQA and ASAP airlines data to create a different way to visualize the. Currently, Delta uses dashboards that show a various types of metrics which are informative but overwhelming and complex. Our goal is 
+Our objective is to use FOQA and ASAP airlines data to create a different way to visualize the. Currently, Delta uses dashboards that show a various types of metrics which are informative but overwhelming and complex. By using our data visualization tool, we hope to simplify the process of data visualization to feed in development of insights. These can help improve predictive maintenance to prevent accidents.
 
 ## Table of Contents
 
@@ -20,8 +20,15 @@ Our use FOQA and ASAP airlines data to create a different way to visualize the. 
 * [Support CoreUI Development](#support-coreui-development)
 
 ## Versions
+0.1, updated 02/10/2019.
 
-## CoreUI Pro
+## Design
+Home Page
+![Alt text](/Home_05.png?raw=true "Home Page")
+Hard Landing
+![Alt text](/Pg4_03.png?raw=true "Hard Landing")
+Hard Landing by Location
+![Alt text](/Pg2_05.png?raw=true "Hard Landing by Location")
 
 ## Admin Templates built on top of CoreUI Pro
 
@@ -60,5 +67,3 @@ For transparency into our release cycle and in striving to maintain backward com
 **Sujeeth Jinesh**
 
 **Ai Thai**
-
-
