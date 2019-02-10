@@ -5,19 +5,10 @@ Our objective is to use FOQA and ASAP airlines data to create a different way to
 ## Table of Contents
 
 * [Versions](#versions)
-* [CoreUI Pro](#coreui-pro)
+* [Design](#design)
 * [Admin Templates built on top of CoreUI Pro](#admin-templates-built-on-top-of-coreui-pro)
 * [Installation](#installation)
 * [Usage](#usage)
-* [What's included](#whats-included)
-* [Documentation](#documentation)
-* [Contributing](#contributing)
-* [Versioning](#versioning)
-* [Creators](#creators)
-* [Community](#community)
-* [Community Projects](#community-projects)
-* [License](#license)
-* [Support CoreUI Development](#support-coreui-development)
 
 ## Versions
 0.1, updated 02/10/2019.
