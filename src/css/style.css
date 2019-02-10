@@ -10043,6 +10043,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .aside-menu {
+  -show;
   z-index: 1019;
   width: 250px;
   color: #2f353a;
