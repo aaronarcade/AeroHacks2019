@@ -40,7 +40,7 @@
       gtag('config', 'UA-118965717-5');
     </script>
   </head>
-  <body class="app header-fixed sidebar-fixed aside-menu-fixed sidebar-lg-show">
+  <body class="app header-fixed aside-menu-fixed sidebar-lg-show">
     
       <header class="app-header navbar">
         <!-- Search bar, need to adjust margins -->
@@ -50,7 +50,7 @@
                 <i class="fa fa-search"></i>
               </span>
             </div>
-            <input id="search_bar" class="form-control" id="prependedInput" size="32" type="text" placeholder="What are you looking for?">
+            <input class="form-control hacked-shit" id="prependedInput" size="10" type="text" placeholder="What are you looking for?">
             <span class="input-group-append">
               <button onClick="search()" id="search_button" class="btn btn-info" type="button">Search</button>
             </span>
@@ -132,7 +132,7 @@ for (i = 0; i < acc.length; i++) {
 
     // search bar script
     function search() {
-        var searchBarText = document.getElementById("search_bar").value.toLowerCase();
+        var searchBarText = document.getElementById("prependedInput").value.toLowerCase();
     
         if (((searchBarText.includes("hard") || searchBarText.includes("landings")) && (searchBarText.includes("location")))) {
         // go to location page

@@ -1,4 +1,3 @@
-
 /* eslint-disable no-var */
 /* eslint-disable object-curly-newline */
 
@@ -24,7 +23,7 @@ var lineChart = new Chart($('#canvas-1'), {
   data: {
     labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
     datasets: [{
-      label: 'Loss of Control',
+      label: 'Hard Landings',
       backgroundColor: 'rgba(119, 153, 204, 1)',
       borderColor: 'rgba(192, 25, 51, 1)',
       pointBackgroundColor: 'rgba(192, 25, 51, 1)',
