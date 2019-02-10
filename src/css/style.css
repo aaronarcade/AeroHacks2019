@@ -584,6 +584,10 @@ pre code {
   margin-left: auto;
 }
 
+
+.container-fluid, .hacked-shit {
+  width: 1000px;
+}
 .row {
   display: -ms-flexbox;
   display: flex;
@@ -10043,7 +10047,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .aside-menu {
-  -show;
+  /* -show; */
   z-index: 1019;
   width: 250px;
   color: #2f353a;
@@ -11533,9 +11537,9 @@ a.text-dark:hover, a.text-dark:focus {
 .callout .chart-wrapper {
   position: absolute;
   top: 10px;
-  left: 50%;
+  left: 100%;
   float: right;
-  width: 50%;
+  width: 100%;
 }
 
 .callout-bordered {
