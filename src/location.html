@@ -50,9 +50,9 @@
                 <i class="fa fa-search"></i>
               </span>
             </div>
-            <input class="form-control" id="prependedInput" size="32" type="text" placeholder="What are you looking for?">
+            <input id="search_bar" class="form-control" id="prependedInput" size="32" type="text" placeholder="What are you looking for?">
             <span class="input-group-append">
-              <button class="btn btn-info" type="button">Search</button>
+              <button onClick="search()" id="search_button" class="btn btn-info" type="button">Search</button>
             </span>
           </div>
           <button class="navbar-toggler aside-menu-toggler d-md-down-none" type="button" data-toggle="aside-menu-lg-show">
@@ -75,6 +75,19 @@
           <style>.embed-container {position: relative; padding-bottom: 20px; height: 500px; width: 750px;} .embed-container iframe, .embed-container object, .embed-container iframe{position: absolute; top: 0; left: 0; height: 500px; width: 750px;} small{position: absolute; z-index: 40; bottom: 0px}</style><div class="embed-container"><iframe width="300" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="Airports Heatmap" src="//www.arcgis.com/apps/Embed/index.html?webmap=de38d57a28ed4f028e0c4f184529683a&extent=-128.7081,16.5474,-42.5753,55.8726&zoom=true&previewImage=false&scale=true&disable_scroll=true&theme=light"></iframe></div>
         </div>
   </main>
+
+  <script>
+
+      // search bar script
+      function search() {
+          var searchBarText = document.getElementById("search_bar").value.toLowerCase();
+      
+          if (((searchBarText.includes("hard") || searchBarText.includes("landings")) && (searchBarText.includes("location")))) {
+          // go to location page
+            location.href = "./location.html";
+          }
+        }
+      </script>
 
 <aside class="aside-menu">
     <ul class="nav nav-tabs" role="tablist">

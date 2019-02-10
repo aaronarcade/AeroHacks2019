@@ -50,9 +50,9 @@
                 <i class="fa fa-search"></i>
               </span>
             </div>
-            <input class="form-control" id="prependedInput" size="32" type="text" placeholder="What are you looking for?">
+            <input id="search_bar" class="form-control" id="prependedInput" size="32" type="text" placeholder="What are you looking for?">
             <span class="input-group-append">
-              <button class="btn btn-info" type="button">Search</button>
+              <button onClick="search()" id="search_button" class="btn btn-info" type="button">Search</button>
             </span>
           </div>
           <button class="navbar-toggler aside-menu-toggler d-md-down-none" type="button" data-toggle="aside-menu-lg-show">
@@ -92,6 +92,19 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 </script>
+
+<script>
+
+    // search bar script
+    function search() {
+        var searchBarText = document.getElementById("search_bar").value.toLowerCase();
+    
+        if (((searchBarText.includes("hard") || searchBarText.includes("landings")) && (searchBarText.includes("location")))) {
+        // go to location page
+          location.href = "./location.html";
+        }
+      }
+    </script>
 
 <aside class="aside-menu">
     <ul class="nav nav-tabs" role="tablist">

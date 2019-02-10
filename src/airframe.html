@@ -50,9 +50,9 @@
                 <i class="fa fa-search"></i>
               </span>
             </div>
-            <input class="form-control" id="prependedInput" size="32" type="text" placeholder="What are you looking for?">
+            <input id="search_bar" class="form-control" id="prependedInput" size="32" type="text" placeholder="What are you looking for?">
             <span class="input-group-append">
-              <button class="btn btn-info" type="button">Search</button>
+              <button onClick="search()" id="search_button" class="btn btn-info" type="button">Search</button>
             </span>
           </div>
           <button class="navbar-toggler aside-menu-toggler d-md-down-none" type="button" data-toggle="aside-menu-lg-show">
@@ -79,9 +79,9 @@
         <div class="b7x7">
             <div class="child"><img src="img/b737.png"></div>
             <div class="child">
-                <p>line1</p>
-                <p>line1</p>
-                <p>line1</p>
+                <p>Manufacturer: Boeing</p>
+                <p>Model: 737-700</p>
+                <p>4 Hard Landings in the past <strong>10 months</strong></p>
             </div>
         </div>
     </div>
@@ -91,9 +91,9 @@
       <div class="b7x7">
             <div class="child"><img src="img/b757.png"></div>
             <div class="child">
-                <p>line2</p>
-                <p>line2</p>
-                <p>line2</p>
+                <p>Manufacturer: Boeing</p>
+                <p>Model: 757</p>
+                <p>2 Hard Landings in the past <strong>6 months</strong></p>
             </div>
         </div>
     </div>
@@ -103,9 +103,9 @@
       <div class="b7x7">
             <div class="child"><img src="img/b777.png"></div>
             <div class="child">
-                <p>line3</p>
-                <p>line3</p>
-                <p>line3</p>
+                <p>Manufacturer: Boeing</p>
+                <p>Model: 777</p>
+                <p>3 Hard Landings in the past <strong>2 months</strong></p>
             </div>
         </div>
     </div>  
@@ -127,6 +127,19 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 </script>
+
+<script>
+
+    // search bar script
+    function search() {
+        var searchBarText = document.getElementById("search_bar").value.toLowerCase();
+    
+        if (((searchBarText.includes("hard") || searchBarText.includes("landings")) && (searchBarText.includes("location")))) {
+        // go to location page
+          location.href = "./location.html";
+        }
+      }
+    </script>
 
 <aside class="aside-menu">
     <ul class="nav nav-tabs" role="tablist">
