@@ -72,20 +72,6 @@
           </li> -->
         </ol>
         <div class="container-fluid">
-          <div class="animated fadeIn">
-            <div class="card-columns cols-2">
-              <div class="card">
-                <div class="card-header">Line Chart
-                </div>
-                <div class="card-body">
-                  <div class="chart-wrapper">
-                    <canvas id="canvas-1"></canvas>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <style>.embed-container {position: relative; padding-bottom: 20px; height: 500px; width: 750px;} .embed-container iframe, .embed-container object, .embed-container iframe{position: absolute; top: 0; left: 0; height: 500px; width: 750px;} small{position: absolute; z-index: 40; bottom: 0px}</style><div class="embed-container"><iframe width="300" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="Airports Heatmap" src="//www.arcgis.com/apps/Embed/index.html?webmap=de38d57a28ed4f028e0c4f184529683a&extent=-128.7081,16.5474,-42.5753,55.8726&zoom=true&previewImage=false&scale=true&disable_scroll=true&theme=light"></iframe></div>
         </div>
     
     <button class="accordion"> 1 <img src="img/b737.png" width="100px"> B737 </button>
@@ -123,7 +109,6 @@
             </div>
         </div>
     </div>  
-    <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d27010778.71616672!2d-121.48540679841544!3d34.268589695091265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e4!4m5!1s0x808f778c55555555%3A0xa4f25c571acded3f!2sSFO%2C+San+Francisco%2C+CA!3m2!1d37.6213129!2d-122.3789554!4m5!1s0x88f4fd2fe1035901%3A0x4117a3ef1892b048!2sHartsfield-Jackson+Atlanta+International+Airport+(ATL)%2C+6000+N+Terminal+Pkwy%2C+Atlanta%2C+GA+30320!3m2!1d33.6407282!2d-84.4277001!5e0!3m2!1sen!2sus!4v1549812564746" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
       </main>
       
     <script> // Accordion Script
@@ -135,7 +120,7 @@ for (i = 0; i < acc.length; i++) {
     this.classList.toggle("active");
     var panel = this.nextElementSibling;
     if (panel.style.display === "block") {
-      panel.style.display = "block";
+      panel.style.display = "none";
     } else {
       panel.style.display = "block";
     }

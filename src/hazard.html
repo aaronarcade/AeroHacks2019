@@ -16,7 +16,7 @@
     <meta name="description" content="CoreUI - Open Source Bootstrap Admin Template">
     <meta name="author" content="Łukasz Holeczek">
     <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,jQuery,CSS,HTML,RWD,Dashboard">
-    <title>CoreUI Free Bootstrap Admin Template</title>
+    <title>Hazard Panel</title>
     <!-- Icons-->
     <link href="node_modules/@coreui/icons/css/coreui-icons.min.css" rel="stylesheet">
     <link href="node_modules/flag-icon-css/css/flag-icon.min.css" rel="stylesheet">
@@ -40,9 +40,10 @@
       gtag('config', 'UA-118965717-5');
     </script>
   </head>
-  <body class="app header-fixed">
+  <body class="app header-fixed sidebar-fixed aside-menu-fixed sidebar-lg-show">
+    
       <header class="app-header navbar">
-        <!-- Search bar, need to adjust margins-->
+        <!-- Search bar, need to adjust margins -->
         <div class="input-prepend input-group">
             <div class="input-group-prepend">
               <span class="input-group-text">
@@ -54,6 +55,12 @@
               <button class="btn btn-info" type="button">Search</button>
             </span>
           </div>
+          <button class="navbar-toggler aside-menu-toggler d-md-down-none" type="button" data-toggle="aside-menu-lg-show">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <button class="navbar-toggler aside-menu-toggler d-lg-none" type="button" data-toggle="aside-menu-show">
+              <span class="navbar-toggler-icon"></span>
+            </button>
       </header>
 
       <main class="main">
@@ -79,8 +86,65 @@
             </div>
           </div>
         </div>
-    
-      <!-- CoreUI and necessary plugins-->
+   </main>
+
+<aside class="aside-menu">
+    <ul class="nav nav-tabs" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" data-toggle="tab" href="#timeline" role="tab">
+          <i class="icon-list"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#messages" role="tab">
+          <i class="icon-speech"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#settings" role="tab">
+          <i class="icon-settings"></i>
+        </a>
+      </li>
+    </ul>
+    <!-- Tab panes-->
+    <div class="tab-content">
+      <div class="tab-pane active" id="timeline" role="tabpanel">
+        <div class="list-group list-group-accent">
+          <div class="list-group-item list-group-item-accent-warning list-group-item-divider">
+            <div class="avatar float-right">
+            </div>
+            <div>
+              <strong><a href="./location.html">Location</a></strong>
+            </div>
+          </div>
+          <div class="list-group-item list-group-item-accent-info">
+            <div class="avatar float-right">
+            </div>
+            <div>
+              <strong><a href="./hazard.html">Time of Day</a></strong>
+            </div>
+          </div>
+          <div class="list-group-item list-group-item-accent-danger list-group-item-divider">
+            <div>
+              <strong><a href="./hazard.html">Air Speed</a></strong>
+            </div>
+          </div>
+          <div class="list-group-item list-group-item-accent-success list-group-item-divider">
+            <div>
+              <strong><a href="./airframe.html">Airframe</a></strong></div>
+          </div>
+          <div class="list-group-item list-group-item-accent-primary list-group-item-divider">
+            <div>
+              <strong><a href="./flight_route.html">Flight Route</a></strong>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+    <!-- CoreUI and necessary plugins-->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
