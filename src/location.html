@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--
+* CoreUI - Free Bootstrap Admin Template
+* @version v2.1.11
+* @link https://coreui.io
+* Copyright (c) 2018 creativeLabs Łukasz Holeczek
+* Licensed under MIT (https://coreui.io/license)
+-->
+
+<html lang="en">
+  <head>
+    <base href="./">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="CoreUI - Open Source Bootstrap Admin Template">
+    <meta name="author" content="Łukasz Holeczek">
+    <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,jQuery,CSS,HTML,RWD,Dashboard">
+    <title>CoreUI Free Bootstrap Admin Template</title>
+    <!-- Icons-->
+    <link href="node_modules/@coreui/icons/css/coreui-icons.min.css" rel="stylesheet">
+    <link href="node_modules/flag-icon-css/css/flag-icon.min.css" rel="stylesheet">
+    <link href="node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="node_modules/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+    <!-- Main styles for this application-->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="vendors/pace-progress/css/pace.min.css" rel="stylesheet">
+    <!-- Global site tag (gtag.js) - Google Analytics-->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-118965717-3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      // Shared ID
+      gtag('config', 'UA-118965717-3');
+      // Bootstrap ID
+      gtag('config', 'UA-118965717-5');
+    </script>
+  </head>
+  <body class="app header-fixed">
+      <header class="app-header navbar">
+        <!-- Search bar, need to adjust margins-->
+        <div class="input-prepend input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">
+                <i class="fa fa-search"></i>
+              </span>
+            </div>
+            <input class="form-control" id="prependedInput" size="32" type="text" placeholder="What are you looking for?">
+            <span class="input-group-append">
+              <button class="btn btn-info" type="button">Search</button>
+            </span>
+          </div>
+      </header>
+
+      <main class="main">
+        <!-- Breadcrumb-->
+        <ol class="breadcrumb">
+          <!-- Maintains padding -->
+          <!-- <li class="breadcrumb-item">
+            <a href="#">Admin</a>
+          </li> -->
+        </ol>
+        <div class="container-fluid">
+          <style>.embed-container {position: relative; padding-bottom: 20px; height: 500px; width: 750px;} .embed-container iframe, .embed-container object, .embed-container iframe{position: absolute; top: 0; left: 0; height: 500px; width: 750px;} small{position: absolute; z-index: 40; bottom: 0px}</style><div class="embed-container"><iframe width="300" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="Airports Heatmap" src="//www.arcgis.com/apps/Embed/index.html?webmap=de38d57a28ed4f028e0c4f184529683a&extent=-128.7081,16.5474,-42.5753,55.8726&zoom=true&previewImage=false&scale=true&disable_scroll=true&theme=light"></iframe></div>
+        </div>
+</script>
+    <!-- CoreUI and necessary plugins-->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/pace-progress/pace.min.js"></script>
+    <script src="node_modules/perfect-scrollbar/dist/perfect-scrollbar.min.js"></script>
+    <script src="node_modules/@coreui/coreui/dist/js/coreui.min.js"></script>
+    <!-- Plugins and scripts required by this view-->
+    <script src="node_modules/chart.js/dist/Chart.min.js"></script>
+    <script src="node_modules/@coreui/coreui-plugin-chartjs-custom-tooltips/dist/js/custom-tooltips.min.js"></script>
+    <script src="js/charts.js"></script>
+  </body>
+</html>
