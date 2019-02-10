@@ -10046,6 +10046,8 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
+.aside-menu{-sm|-md|-lg|-xl}-show
+
 .aside-menu {
   /* -show; */
   z-index: 1019;
