@@ -10295,7 +10295,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .brand-card-header .chart-wrapper {
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   left: 0;
   width: 100%;
@@ -12024,6 +12024,7 @@ canvas {
 
 .main .container-fluid {
   padding: 0 30px;
+  background-color: rgb(18, 23, 44)
 }
 
 .app-header {
@@ -13753,7 +13754,7 @@ html[dir="rtl"] .aside-menu {
 }
 
 .breadcrumb-fixed .main {
-  padding-top: 3.875rem;
+  /* padding-top: 3.875rem; */
 }
 
 .breadcrumb-fixed .breadcrumb {
